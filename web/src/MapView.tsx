@@ -71,7 +71,7 @@ export default function MapView(p: Props) {
     if (p.interactive !== false) m.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right')
     m.on('load', () => {
       m.addSource('base', { type: 'raster', tileSize: 256, attribution: '© OpenStreetMap', tiles: tiles(isDark()) })
-      m.addLayer({ id: 'base', type: 'raster', source: 'base', paint: { 'raster-opacity': 0.4, 'raster-saturation': -1 } })
+      m.addLayer({ id: 'base', type: 'raster', source: 'base', paint: { 'raster-opacity': 0.75, 'raster-saturation': -0.6 } })
       m.addSource('roads', { type: 'geojson', data: latest.current.store.roads })
       m.addLayer({ id: 'sel-halo', type: 'line', source: 'roads', filter: ['==', ['get', 'sre'], ''], layout: { 'line-cap': 'round' }, paint: { 'line-color': '#ffd23f', 'line-width': 14, 'line-opacity': 0.7 } })
       m.addLayer({ id: 'roads', type: 'line', source: 'roads', layout: { 'line-cap': 'round', 'line-join': 'round', 'line-sort-key': ['match', ['get', 'o'], 'c', 2, 'e', 1, 0] }, paint: {} })
@@ -116,7 +116,7 @@ export default function MapView(p: Props) {
   useEffect(() => whenReady((m) => {
     const src = m.getSource('base') as (maplibregl.RasterTileSource & { setTiles?: (t: string[]) => void }) | undefined
     src?.setTiles?.(tiles(dark))
-    m.setLayoutProperty('base', 'visibility', p.basemap === true ? 'visible' : 'none')
+    m.setLayoutProperty('base', 'visibility', p.basemap !== false ? 'visible' : 'none')
   }), [dark, p.basemap])
   useEffect(() => whenReady((m) => m.setFilter('sel-halo', ['==', ['get', 'sre'], p.selected ?? ''])), [p.selected])
   useEffect(() => whenReady((m) => (m.getSource('overlay') as maplibregl.GeoJSONSource).setData(p.overlay ?? { type: 'FeatureCollection', features: [] })), [p.overlay])

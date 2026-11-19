@@ -14,7 +14,7 @@ export default function Explorer({ store, cd, selected, onSelect }: P) {
   const [sent, setSent] = useState<Sent>('ambos')
   const [go, setGo] = useState('')
   const [q, setQ] = useState('')
-  const [basemap, setBasemap] = useState(false)
+  const [basemap, setBasemap] = useState(true)
   const gos = useMemo(() => [...new Set(store.segs.map((s) => s.go))].sort(), [store])
   const filter = useMemo(() => (go ? (_: string, g: string) => g.replace(/\D/g, '') === go.replace(/\D/g, '') : undefined), [go])
   const view = useMemo(() => {
@@ -40,7 +40,7 @@ export default function Explorer({ store, cd, selected, onSelect }: P) {
           <label>Rodovia <select value={go} onChange={(e) => setGo(e.target.value)}><option value="">Todas</option>{gos.map((g) => <option key={g}>{g}</option>)}</select></label>
           <input type="search" list="sres" placeholder="Buscar SRE (ex.: 010EGO0010)" value={q} onChange={(e) => search(e.target.value)} aria-label="Buscar SRE" />
           <datalist id="sres">{[...store.bySre.keys()].slice(0, 3000).map((s) => <option key={s} value={s} />)}</datalist>
-          <label><input type="checkbox" checked={basemap} onChange={(e) => setBasemap(e.target.checked)} /> Mapa base OSM (online)</label>
+          <label><input type="checkbox" checked={basemap} onChange={(e) => setBasemap(e.target.checked)} /> Mapa base OpenStreetMap</label>
         </div>
         <div className="mapcol"><MapView store={store} cd={cd} mode={mode} cls={cls} sent={sent} className="h-explorer" selected={selected} onSelect={onSelect} view={view} basemap={basemap} roadFilter={filter} /></div>
         <aside className="side" aria-live="polite">

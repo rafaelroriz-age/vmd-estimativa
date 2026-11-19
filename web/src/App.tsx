@@ -45,7 +45,7 @@ export default function App() {
       </main>
       <footer><div className="wrap">
         <p><b>Fonte dos dados:</b> <code>vmd_SRE_SET-26_features_2026.xlsx</code>, estimativas <code>modelo_volume_glmm_eb_20261118_184542.xlsx</code> e <code>modelo_volume_glmm_car_20261118_195410.xlsx</code>, malha <code>SRE-GO_2026_SET_SGP.shp</code> (geometria simplificada). Estimativas EB e CAR são as saídas oficiais da rodada; o app não reexecuta os modelos.</p>
-        <p>A camada de dados é isolada em <code>src/data.ts</code> (interface <code>DataSource</code>) para migrar para o Supabase sem alterar a interface. Mapa base © OpenStreetMap (opcional, online).</p>
+        <p>A camada de dados é isolada em <code>src/data.ts</code> (interface <code>DataSource</code>) para migrar para o Supabase sem alterar a interface. Mapa base © OpenStreetMap.</p>
       </div></footer>
     </>
   )
