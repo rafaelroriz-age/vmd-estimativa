@@ -15,12 +15,12 @@ export function Hero({ store, cd }: P) {
     <section className="hero wrap" id="topo">
       <div className="grid">
         <div>
-          <div className="kicker">Estimativa de VMD · Goiás · rodada SET/2026</div>
-          <h1>Como estimamos o tráfego onde ninguém contou</h1>
+          <div className="kicker">Estimativa de VMD · Goiás </div>
+          <h1>Estimativa técnica em volume de tráfego</h1>
           <p className="lead">
             Só {nf0.format(m.n_sre_obs)} das {nf0.format(m.n_sre)} SREs pavimentadas têm contagem. Dois modelos
-            estatísticos — <b>GLMM-EB</b> (rápido, determinístico) e <b>GLMM-CAR</b> (bayesiano, com incerteza) — preenchem o resto.
-            Este guia mostra, passo a passo, o que acontece com o dado em cada um.
+            estatísticos: <b>GLMM-EB</b> (rápido, determinístico) e <b>GLMM-CAR</b> (bayesiano, com incerteza)
+            Este guia mostra o que acontece com o dado em cada um.
           </p>
           <div className="stats">
             <div className="stat"><b>{nf0.format(m.n_sre)}</b><span>SREs no escopo (PAV/DUP/EOD)</span></div>
