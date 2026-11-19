@@ -1,0 +1,5 @@
+node_modules/
+dist/
+web/dev-dist/
+__pycache__/
+*.pkl

@@ -1,0 +1,26 @@
+{
+  "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+  "linhas": 3854,
+  "linhas_observadas": 406,
+  "ano": 2026,
+  "taxa_crescimento": 0.03,
+  "cv_agrupada_por_sre": {
+    "vmd_r2": 0.5582,
+    "vmd_r2_log": 0.6163,
+    "vmd_mape_pct": 62.5005,
+    "vmd_mdape_pct": 37.1766,
+    "vmd_dentro_30pct": 40.3941,
+    "vmd_dentro_50pct": 68.555,
+    "classes_wape_pct": 54.6661,
+    "classes_rmsle_macro": 0.6561,
+    "rmsle_Passeio": 0.6524,
+    "rmsle_Moto": 0.7891,
+    "rmsle_2c": 0.592,
+    "rmsle_3c": 0.614,
+    "rmsle_3s3": 0.9616,
+    "rmsle_3t6": 1.1221
+  },
+  "segundos_ajuste_previsao": 1.34,
+  "arquivo_operacional": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\08_entrega-glmm-car-vmd\\outputs\\modelo_volume_glmm_eb_20261118_184542.xlsx",
+  "segundos_total": 13.2
+}

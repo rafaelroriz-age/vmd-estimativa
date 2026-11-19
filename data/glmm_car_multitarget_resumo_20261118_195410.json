@@ -1,0 +1,5813 @@
+{
+  "gerado_em": "2026-11-18T19:54:10",
+  "tempo_execucao_s": 1244.22,
+  "pre_processamento": {
+    "ano_referencia": 2026,
+    "taxa_crescimento": 0.03,
+    "linhas_observadas": 406,
+    "ajustes_por_target": {
+      "Passeio": 406,
+      "Van": 406,
+      "Pickup": 406,
+      "Moto": 406,
+      "2cb": 406,
+      "3cb": 406,
+      "4cb": 406,
+      "2sb1": 406,
+      "2ib2": 406,
+      "2c": 406,
+      "3c": 406,
+      "4c": 406,
+      "4cd": 406,
+      "2s1": 406,
+      "2s2": 406,
+      "3s1": 406,
+      "2s3": 406,
+      "3s2": 406,
+      "2i2": 406,
+      "2i3": 406,
+      "2j3": 406,
+      "3i2": 406,
+      "3s3": 406,
+      "3i3": 406,
+      "3j3": 406,
+      "4r4": 406,
+      "2c2": 406,
+      "2c3": 406,
+      "3c2": 406,
+      "3c3": 406,
+      "3d3": 406,
+      "3d4": 406,
+      "3q4": 406,
+      "3q6": 406,
+      "3t6": 406
+    }
+  },
+  "expansao_modelo_saida": {
+    "linhas_modelo_saida": 4864,
+    "linhas_presentes_dataset": 4864,
+    "sres_no_dataset": 2432,
+    "linhas_sentido_completadas": 0,
+    "sres_com_sentido_completado": 0,
+    "linhas_com_contagem": 406,
+    "linhas_nao_principais": 0,
+    "sres_nao_principais_sem_referencia": 0,
+    "aliases_aplicados": {
+      "lat_inicial": "lat_inicia",
+      "lon_inicial": "lon_inicia",
+      "regional_macro": "regional",
+      "distancia_cid_1_2_3": "distancia_cid_1"
+    }
+  },
+  "filtro_situacao": {
+    "situacoes_permitidas": [
+      "DUP",
+      "EOD",
+      "PAV"
+    ],
+    "linhas_antes_filtro_situacao": 4864,
+    "linhas_removidas_filtro_situacao": 1010,
+    "linhas_apos_filtro_situacao": 3854,
+    "sres_removidas_filtro_situacao": 505
+  },
+  "configuracao_por_target": {
+    "Passeio": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "Passeio",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 406,
+      "n_zero_observado": 0,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 203,
+        "DECRESCENTE": 203
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 46,
+          "n_zero_observado": 0,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 54,
+          "n_zero_observado": 0,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 26,
+          "n_zero_observado": 0,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 18,
+          "n_zero_observado": 0,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 32,
+          "n_zero_observado": 0,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 34,
+          "n_zero_observado": 0,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 24,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 6,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 20,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 242,
+      "n_isolados_car": 164,
+      "n_arestas_car": 168,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "Van": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "Van",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 318,
+      "n_zero_observado": 88,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 159,
+        "DECRESCENTE": 159
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 8,
+          "n_zero_observado": 2,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 20,
+          "n_zero_observado": 26,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 44,
+          "n_zero_observado": 10,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 20,
+          "n_zero_observado": 2,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 18,
+          "n_zero_observado": 8,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 18,
+          "n_zero_observado": 0,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 26,
+          "n_zero_observado": 6,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 30,
+          "n_zero_observado": 4,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 20,
+          "n_zero_observado": 4,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 20,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 10,
+          "n_zero_observado": 6,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 4,
+          "n_zero_observado": 4,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 186,
+      "n_isolados_car": 132,
+      "n_arestas_car": 126,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "Pickup": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "Pickup",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 325,
+      "n_zero_observado": 81,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 163,
+        "DECRESCENTE": 162
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 8,
+          "n_zero_observado": 2,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 20,
+          "n_zero_observado": 26,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 44,
+          "n_zero_observado": 10,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 20,
+          "n_zero_observado": 2,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 20,
+          "n_zero_observado": 6,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 18,
+          "n_zero_observado": 0,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 26,
+          "n_zero_observado": 6,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 31,
+          "n_zero_observado": 3,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 24,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 20,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 10,
+          "n_zero_observado": 6,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 4,
+          "n_zero_observado": 4,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 192,
+      "n_isolados_car": 133,
+      "n_arestas_car": 129,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "Moto": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "Moto",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 406,
+      "n_zero_observado": 0,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 203,
+        "DECRESCENTE": 203
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 46,
+          "n_zero_observado": 0,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 54,
+          "n_zero_observado": 0,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 26,
+          "n_zero_observado": 0,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 18,
+          "n_zero_observado": 0,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 32,
+          "n_zero_observado": 0,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 34,
+          "n_zero_observado": 0,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 24,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 6,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 20,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 242,
+      "n_isolados_car": 164,
+      "n_arestas_car": 168,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "2cb": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "2cb",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 402,
+      "n_zero_observado": 4,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 202,
+        "DECRESCENTE": 200
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 46,
+          "n_zero_observado": 0,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 54,
+          "n_zero_observado": 0,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 26,
+          "n_zero_observado": 0,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 18,
+          "n_zero_observado": 0,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 30,
+          "n_zero_observado": 2,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 33,
+          "n_zero_observado": 1,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 24,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 6,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 19,
+          "n_zero_observado": 1,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 238,
+      "n_isolados_car": 164,
+      "n_arestas_car": 165,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3cb": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3cb",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 210,
+      "n_zero_observado": 196,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 101,
+        "DECRESCENTE": 109
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 8,
+          "n_zero_observado": 2,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 1,
+          "n_zero_observado": 9,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 32,
+          "n_zero_observado": 14,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 25,
+          "n_zero_observado": 29,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 2,
+          "n_zero_observado": 20,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 18,
+          "n_zero_observado": 8,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 8,
+          "n_zero_observado": 8,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 12,
+          "n_zero_observado": 6,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 12,
+          "n_zero_observado": 20,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 6,
+          "n_zero_observado": 16,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 22,
+          "n_zero_observado": 12,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 5,
+          "n_zero_observado": 7,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 14,
+          "n_zero_observado": 10,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 6,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 2,
+          "n_zero_observado": 8,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 12,
+          "n_zero_observado": 8,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 4,
+          "n_zero_observado": 4,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 5,
+          "n_zero_observado": 11,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 8,
+          "n_zero_observado": 4,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 144,
+      "n_isolados_car": 66,
+      "n_arestas_car": 102,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "4cb": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "4cb",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 104,
+      "n_zero_observado": 302,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 51,
+        "DECRESCENTE": 53
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 4,
+          "n_zero_observado": 6,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 24,
+          "n_zero_observado": 22,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 13,
+          "n_zero_observado": 41,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 2,
+          "n_zero_observado": 20,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 7,
+          "n_zero_observado": 19,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 1,
+          "n_zero_observado": 15,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 8,
+          "n_zero_observado": 10,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 0,
+          "n_zero_observado": 32,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 3,
+          "n_zero_observado": 19,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 20,
+          "n_zero_observado": 14,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 2,
+          "n_zero_observado": 10,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 6,
+          "n_zero_observado": 18,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 2,
+          "n_zero_observado": 4,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 5,
+          "n_zero_observado": 15,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 2,
+          "n_zero_observado": 6,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 1,
+          "n_zero_observado": 15,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 2,
+          "n_zero_observado": 10,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 2,
+          "n_zero_observado": 6,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 58,
+      "n_isolados_car": 46,
+      "n_arestas_car": 43,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "2sb1": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "2sb1",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 6,
+      "n_zero_observado": 400,
+      "n_pr": 3448,
+      "amostra_pequena": true,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 3,
+        "DECRESCENTE": 3
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 4,
+          "n_zero_observado": 42,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 0,
+          "n_zero_observado": 54,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 2,
+          "n_zero_observado": 24,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 0,
+          "n_zero_observado": 18,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 0,
+          "n_zero_observado": 32,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 0,
+          "n_zero_observado": 34,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 0,
+          "n_zero_observado": 24,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 0,
+          "n_zero_observado": 20,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 0,
+      "n_isolados_car": 6,
+      "n_arestas_car": 0,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "2ib2": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "2ib2",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 3,
+      "n_zero_observado": 403,
+      "n_pr": 3448,
+      "amostra_pequena": true,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 1,
+        "DECRESCENTE": 2
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 2,
+          "n_zero_observado": 44,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 0,
+          "n_zero_observado": 54,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 0,
+          "n_zero_observado": 26,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 0,
+          "n_zero_observado": 18,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 0,
+          "n_zero_observado": 32,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 0,
+          "n_zero_observado": 34,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 0,
+          "n_zero_observado": 24,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 0,
+          "n_zero_observado": 20,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 1,
+          "n_zero_observado": 11,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 0,
+      "n_isolados_car": 3,
+      "n_arestas_car": 0,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "2c": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "2c",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 405,
+      "n_zero_observado": 1,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 203,
+        "DECRESCENTE": 202
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 46,
+          "n_zero_observado": 0,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 54,
+          "n_zero_observado": 0,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 26,
+          "n_zero_observado": 0,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 18,
+          "n_zero_observado": 0,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 32,
+          "n_zero_observado": 0,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 33,
+          "n_zero_observado": 1,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 24,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 6,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 20,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 240,
+      "n_isolados_car": 165,
+      "n_arestas_car": 167,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3c": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3c",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 405,
+      "n_zero_observado": 1,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 203,
+        "DECRESCENTE": 202
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 46,
+          "n_zero_observado": 0,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 54,
+          "n_zero_observado": 0,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 26,
+          "n_zero_observado": 0,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 18,
+          "n_zero_observado": 0,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 32,
+          "n_zero_observado": 0,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 33,
+          "n_zero_observado": 1,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 24,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 6,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 20,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 240,
+      "n_isolados_car": 165,
+      "n_arestas_car": 167,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "4c": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "4c",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 15,
+      "n_zero_observado": 391,
+      "n_pr": 3448,
+      "amostra_pequena": true,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 6,
+        "DECRESCENTE": 9
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 2,
+          "n_zero_observado": 8,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 3,
+          "n_zero_observado": 43,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 2,
+          "n_zero_observado": 52,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 0,
+          "n_zero_observado": 26,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 0,
+          "n_zero_observado": 18,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 0,
+          "n_zero_observado": 32,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 0,
+          "n_zero_observado": 34,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 3,
+          "n_zero_observado": 9,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 0,
+          "n_zero_observado": 24,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 2,
+          "n_zero_observado": 18,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 2,
+          "n_zero_observado": 6,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 1,
+          "n_zero_observado": 11,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 6,
+      "n_isolados_car": 9,
+      "n_arestas_car": 3,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "4cd": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "4cd",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 383,
+      "n_zero_observado": 23,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 191,
+        "DECRESCENTE": 192
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 6,
+          "n_zero_observado": 4,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 46,
+          "n_zero_observado": 0,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 49,
+          "n_zero_observado": 5,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 26,
+          "n_zero_observado": 0,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 17,
+          "n_zero_observado": 1,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 31,
+          "n_zero_observado": 1,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 33,
+          "n_zero_observado": 1,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 8,
+          "n_zero_observado": 4,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 24,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 6,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 15,
+          "n_zero_observado": 5,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 14,
+          "n_zero_observado": 2,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 234,
+      "n_isolados_car": 149,
+      "n_arestas_car": 162,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "2s1": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "2s1",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 38,
+      "n_zero_observado": 368,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 19,
+        "DECRESCENTE": 19
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 4,
+          "n_zero_observado": 6,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 12,
+          "n_zero_observado": 34,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 8,
+          "n_zero_observado": 46,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 1,
+          "n_zero_observado": 25,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 1,
+          "n_zero_observado": 15,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 3,
+          "n_zero_observado": 15,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 0,
+          "n_zero_observado": 32,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 1,
+          "n_zero_observado": 21,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 0,
+          "n_zero_observado": 34,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 2,
+          "n_zero_observado": 10,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 0,
+          "n_zero_observado": 24,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 4,
+          "n_zero_observado": 16,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 2,
+          "n_zero_observado": 6,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 14,
+      "n_isolados_car": 24,
+      "n_arestas_car": 8,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "2s2": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "2s2",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 317,
+      "n_zero_observado": 89,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 155,
+        "DECRESCENTE": 162
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 9,
+          "n_zero_observado": 1,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 9,
+          "n_zero_observado": 1,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 45,
+          "n_zero_observado": 1,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 38,
+          "n_zero_observado": 16,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 19,
+          "n_zero_observado": 3,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 20,
+          "n_zero_observado": 6,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 8,
+          "n_zero_observado": 8,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 14,
+          "n_zero_observado": 4,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 26,
+          "n_zero_observado": 6,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 15,
+          "n_zero_observado": 7,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 29,
+          "n_zero_observado": 5,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 8,
+          "n_zero_observado": 4,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 18,
+          "n_zero_observado": 6,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 2,
+          "n_zero_observado": 4,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 5,
+          "n_zero_observado": 5,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 18,
+          "n_zero_observado": 2,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 7,
+          "n_zero_observado": 1,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 10,
+          "n_zero_observado": 6,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 5,
+          "n_zero_observado": 3,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 194,
+      "n_isolados_car": 123,
+      "n_arestas_car": 136,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3s1": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3s1",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 0,
+      "n_zero_observado": 406,
+      "n_pr": 3448,
+      "amostra_pequena": true,
+      "n_tr_por_sentido": {},
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 0,
+          "n_zero_observado": 46,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 0,
+          "n_zero_observado": 54,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 0,
+          "n_zero_observado": 26,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 0,
+          "n_zero_observado": 18,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 0,
+          "n_zero_observado": 32,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 0,
+          "n_zero_observado": 34,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 0,
+          "n_zero_observado": 24,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 0,
+          "n_zero_observado": 20,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 0,
+      "n_isolados_car": 0,
+      "n_arestas_car": 0,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "2s3": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "2s3",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 351,
+      "n_zero_observado": 55,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 175,
+        "DECRESCENTE": 176
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 8,
+          "n_zero_observado": 2,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 7,
+          "n_zero_observado": 3,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 44,
+          "n_zero_observado": 2,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 39,
+          "n_zero_observado": 15,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 24,
+          "n_zero_observado": 2,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 16,
+          "n_zero_observado": 2,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 30,
+          "n_zero_observado": 2,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 20,
+          "n_zero_observado": 2,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 33,
+          "n_zero_observado": 1,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 6,
+          "n_zero_observado": 6,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 24,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 3,
+          "n_zero_observado": 3,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 6,
+          "n_zero_observado": 4,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 16,
+          "n_zero_observado": 4,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 7,
+          "n_zero_observado": 1,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 11,
+          "n_zero_observado": 5,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 7,
+          "n_zero_observado": 1,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 211,
+      "n_isolados_car": 140,
+      "n_arestas_car": 148,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3s2": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3s2",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 343,
+      "n_zero_observado": 63,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 175,
+        "DECRESCENTE": 168
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 8,
+          "n_zero_observado": 2,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 7,
+          "n_zero_observado": 3,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 42,
+          "n_zero_observado": 4,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 40,
+          "n_zero_observado": 14,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 19,
+          "n_zero_observado": 3,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 22,
+          "n_zero_observado": 4,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 15,
+          "n_zero_observado": 1,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 18,
+          "n_zero_observado": 0,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 28,
+          "n_zero_observado": 4,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 15,
+          "n_zero_observado": 7,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 30,
+          "n_zero_observado": 4,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 7,
+          "n_zero_observado": 5,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 20,
+          "n_zero_observado": 4,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 5,
+          "n_zero_observado": 1,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 9,
+          "n_zero_observado": 1,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 16,
+          "n_zero_observado": 4,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 14,
+          "n_zero_observado": 2,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 195,
+      "n_isolados_car": 148,
+      "n_arestas_car": 138,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "2i2": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "2i2",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 74,
+      "n_zero_observado": 332,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 37,
+        "DECRESCENTE": 37
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 2,
+          "n_zero_observado": 8,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 22,
+          "n_zero_observado": 24,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 11,
+          "n_zero_observado": 43,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 2,
+          "n_zero_observado": 20,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 2,
+          "n_zero_observado": 24,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 3,
+          "n_zero_observado": 13,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 4,
+          "n_zero_observado": 14,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 11,
+          "n_zero_observado": 21,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 1,
+          "n_zero_observado": 33,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 2,
+          "n_zero_observado": 10,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 0,
+          "n_zero_observado": 24,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 2,
+          "n_zero_observado": 4,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 8,
+          "n_zero_observado": 12,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 2,
+          "n_zero_observado": 6,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 2,
+          "n_zero_observado": 10,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 42,
+      "n_isolados_car": 32,
+      "n_arestas_car": 32,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "2i3": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "2i3",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 57,
+      "n_zero_observado": 349,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 26,
+        "DECRESCENTE": 31
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 2,
+          "n_zero_observado": 8,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 10,
+          "n_zero_observado": 36,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 14,
+          "n_zero_observado": 40,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 1,
+          "n_zero_observado": 21,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 2,
+          "n_zero_observado": 24,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 4,
+          "n_zero_observado": 14,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 1,
+          "n_zero_observado": 31,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 3,
+          "n_zero_observado": 19,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 7,
+          "n_zero_observado": 27,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 2,
+          "n_zero_observado": 10,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 7,
+          "n_zero_observado": 17,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 2,
+          "n_zero_observado": 18,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 2,
+          "n_zero_observado": 6,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 29,
+      "n_isolados_car": 28,
+      "n_arestas_car": 19,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "2j3": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "2j3",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 39,
+      "n_zero_observado": 367,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 19,
+        "DECRESCENTE": 20
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 2,
+          "n_zero_observado": 8,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 9,
+          "n_zero_observado": 37,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 12,
+          "n_zero_observado": 42,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 2,
+          "n_zero_observado": 20,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 3,
+          "n_zero_observado": 23,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 2,
+          "n_zero_observado": 16,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 0,
+          "n_zero_observado": 32,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 4,
+          "n_zero_observado": 18,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 1,
+          "n_zero_observado": 33,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 1,
+          "n_zero_observado": 23,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 1,
+          "n_zero_observado": 5,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 2,
+          "n_zero_observado": 18,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 19,
+      "n_isolados_car": 20,
+      "n_arestas_car": 11,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3i2": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3i2",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 75,
+      "n_zero_observado": 331,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 37,
+        "DECRESCENTE": 38
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 1,
+          "n_zero_observado": 9,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 18,
+          "n_zero_observado": 28,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 15,
+          "n_zero_observado": 39,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 2,
+          "n_zero_observado": 20,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 4,
+          "n_zero_observado": 22,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 3,
+          "n_zero_observado": 13,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 5,
+          "n_zero_observado": 13,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 6,
+          "n_zero_observado": 26,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 0,
+          "n_zero_observado": 34,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 0,
+          "n_zero_observado": 24,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 1,
+          "n_zero_observado": 9,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 9,
+          "n_zero_observado": 11,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 2,
+          "n_zero_observado": 6,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 1,
+          "n_zero_observado": 15,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 8,
+          "n_zero_observado": 4,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 42,
+      "n_isolados_car": 33,
+      "n_arestas_car": 32,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3s3": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3s3",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 399,
+      "n_zero_observado": 7,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 200,
+        "DECRESCENTE": 199
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 9,
+          "n_zero_observado": 1,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 8,
+          "n_zero_observado": 2,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 46,
+          "n_zero_observado": 0,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 54,
+          "n_zero_observado": 0,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 25,
+          "n_zero_observado": 1,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 18,
+          "n_zero_observado": 0,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 32,
+          "n_zero_observado": 0,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 33,
+          "n_zero_observado": 1,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 24,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 6,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 20,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 14,
+          "n_zero_observado": 2,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 238,
+      "n_isolados_car": 161,
+      "n_arestas_car": 166,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3i3": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3i3",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 272,
+      "n_zero_observado": 134,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 139,
+        "DECRESCENTE": 133
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 6,
+          "n_zero_observado": 4,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 5,
+          "n_zero_observado": 5,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 39,
+          "n_zero_observado": 7,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 31,
+          "n_zero_observado": 23,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 18,
+          "n_zero_observado": 4,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 19,
+          "n_zero_observado": 7,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 7,
+          "n_zero_observado": 9,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 16,
+          "n_zero_observado": 2,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 21,
+          "n_zero_observado": 11,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 17,
+          "n_zero_observado": 5,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 26,
+          "n_zero_observado": 8,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 7,
+          "n_zero_observado": 5,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 18,
+          "n_zero_observado": 6,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 2,
+          "n_zero_observado": 4,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 2,
+          "n_zero_observado": 8,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 11,
+          "n_zero_observado": 9,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 5,
+          "n_zero_observado": 11,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 10,
+          "n_zero_observado": 2,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 4,
+          "n_zero_observado": 4,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 178,
+      "n_isolados_car": 94,
+      "n_arestas_car": 126,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3j3": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3j3",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 169,
+      "n_zero_observado": 237,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 86,
+        "DECRESCENTE": 83
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 5,
+          "n_zero_observado": 5,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 2,
+          "n_zero_observado": 8,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 32,
+          "n_zero_observado": 14,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 22,
+          "n_zero_observado": 32,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 6,
+          "n_zero_observado": 16,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 11,
+          "n_zero_observado": 15,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 4,
+          "n_zero_observado": 12,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 5,
+          "n_zero_observado": 13,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 12,
+          "n_zero_observado": 20,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 8,
+          "n_zero_observado": 14,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 12,
+          "n_zero_observado": 22,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 2,
+          "n_zero_observado": 10,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 16,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 4,
+          "n_zero_observado": 2,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 5,
+          "n_zero_observado": 5,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 4,
+          "n_zero_observado": 16,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 4,
+          "n_zero_observado": 4,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 6,
+          "n_zero_observado": 10,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 6,
+          "n_zero_observado": 6,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 3,
+          "n_zero_observado": 5,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 101,
+      "n_isolados_car": 68,
+      "n_arestas_car": 69,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "4r4": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "4r4",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 85,
+      "n_zero_observado": 321,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 42,
+        "DECRESCENTE": 43
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 4,
+          "n_zero_observado": 6,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 4,
+          "n_zero_observado": 42,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 0,
+          "n_zero_observado": 54,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 13,
+          "n_zero_observado": 9,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 1,
+          "n_zero_observado": 25,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 12,
+          "n_zero_observado": 4,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 16,
+          "n_zero_observado": 2,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 26,
+          "n_zero_observado": 6,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 5,
+          "n_zero_observado": 17,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 0,
+          "n_zero_observado": 34,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 0,
+          "n_zero_observado": 24,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 0,
+          "n_zero_observado": 20,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 4,
+          "n_zero_observado": 4,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 56,
+      "n_isolados_car": 29,
+      "n_arestas_car": 36,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "2c2": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "2c2",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 114,
+      "n_zero_observado": 292,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 58,
+        "DECRESCENTE": 56
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 2,
+          "n_zero_observado": 8,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 23,
+          "n_zero_observado": 23,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 10,
+          "n_zero_observado": 44,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 7,
+          "n_zero_observado": 15,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 18,
+          "n_zero_observado": 8,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 2,
+          "n_zero_observado": 16,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 11,
+          "n_zero_observado": 21,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 6,
+          "n_zero_observado": 16,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 25,
+          "n_zero_observado": 9,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 6,
+          "n_zero_observado": 18,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 2,
+          "n_zero_observado": 18,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 2,
+          "n_zero_observado": 10,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 72,
+      "n_isolados_car": 42,
+      "n_arestas_car": 50,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "2c3": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "2c3",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 9,
+      "n_zero_observado": 397,
+      "n_pr": 3448,
+      "amostra_pequena": true,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 5,
+        "DECRESCENTE": 4
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 1,
+          "n_zero_observado": 45,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 2,
+          "n_zero_observado": 52,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 0,
+          "n_zero_observado": 26,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 0,
+          "n_zero_observado": 18,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 0,
+          "n_zero_observado": 32,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 5,
+          "n_zero_observado": 29,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 1,
+          "n_zero_observado": 23,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 0,
+          "n_zero_observado": 20,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 2,
+      "n_isolados_car": 7,
+      "n_arestas_car": 1,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3c2": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3c2",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 202,
+      "n_zero_observado": 204,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 102,
+        "DECRESCENTE": 100
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 2,
+          "n_zero_observado": 8,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 3,
+          "n_zero_observado": 7,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 33,
+          "n_zero_observado": 13,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 22,
+          "n_zero_observado": 32,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 17,
+          "n_zero_observado": 5,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 21,
+          "n_zero_observado": 5,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 5,
+          "n_zero_observado": 11,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 6,
+          "n_zero_observado": 12,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 19,
+          "n_zero_observado": 13,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 15,
+          "n_zero_observado": 7,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 26,
+          "n_zero_observado": 8,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 9,
+          "n_zero_observado": 15,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 1,
+          "n_zero_observado": 5,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 1,
+          "n_zero_observado": 9,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 9,
+          "n_zero_observado": 11,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 2,
+          "n_zero_observado": 6,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 6,
+          "n_zero_observado": 6,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 5,
+          "n_zero_observado": 3,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 129,
+      "n_isolados_car": 73,
+      "n_arestas_car": 88,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3c3": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3c3",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 133,
+      "n_zero_observado": 273,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 66,
+        "DECRESCENTE": 67
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 27,
+          "n_zero_observado": 19,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 12,
+          "n_zero_observado": 42,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 7,
+          "n_zero_observado": 15,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 12,
+          "n_zero_observado": 14,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 8,
+          "n_zero_observado": 8,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 8,
+          "n_zero_observado": 10,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 18,
+          "n_zero_observado": 14,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 8,
+          "n_zero_observado": 14,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 18,
+          "n_zero_observado": 16,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 2,
+          "n_zero_observado": 10,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 4,
+          "n_zero_observado": 20,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 7,
+          "n_zero_observado": 13,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 2,
+          "n_zero_observado": 10,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 90,
+      "n_isolados_car": 43,
+      "n_arestas_car": 60,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3d3": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3d3",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 14,
+      "n_zero_observado": 392,
+      "n_pr": 3448,
+      "amostra_pequena": true,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 7,
+        "DECRESCENTE": 7
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 2,
+          "n_zero_observado": 8,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 0,
+          "n_zero_observado": 46,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 2,
+          "n_zero_observado": 52,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 0,
+          "n_zero_observado": 26,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 0,
+          "n_zero_observado": 18,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 0,
+          "n_zero_observado": 32,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 0,
+          "n_zero_observado": 34,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 2,
+          "n_zero_observado": 10,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 0,
+          "n_zero_observado": 24,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 4,
+          "n_zero_observado": 16,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 2,
+          "n_zero_observado": 6,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 2,
+          "n_zero_observado": 10,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 6,
+      "n_isolados_car": 8,
+      "n_arestas_car": 4,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3d4": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3d4",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 386,
+      "n_zero_observado": 20,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 193,
+        "DECRESCENTE": 193
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 6,
+          "n_zero_observado": 4,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 44,
+          "n_zero_observado": 2,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 49,
+          "n_zero_observado": 5,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 25,
+          "n_zero_observado": 1,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 18,
+          "n_zero_observado": 0,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 32,
+          "n_zero_observado": 0,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 33,
+          "n_zero_observado": 1,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 10,
+          "n_zero_observado": 2,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 24,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 6,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 17,
+          "n_zero_observado": 3,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 14,
+          "n_zero_observado": 2,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 229,
+      "n_isolados_car": 157,
+      "n_arestas_car": 161,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3q4": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3q4",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 8,
+      "n_zero_observado": 398,
+      "n_pr": 3448,
+      "amostra_pequena": true,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 3,
+        "DECRESCENTE": 5
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 2,
+          "n_zero_observado": 44,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 0,
+          "n_zero_observado": 54,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 1,
+          "n_zero_observado": 25,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 0,
+          "n_zero_observado": 18,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 0,
+          "n_zero_observado": 32,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 0,
+          "n_zero_observado": 22,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 0,
+          "n_zero_observado": 34,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 0,
+          "n_zero_observado": 12,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 0,
+          "n_zero_observado": 24,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 1,
+          "n_zero_observado": 19,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 2,
+          "n_zero_observado": 6,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 0,
+          "n_zero_observado": 16,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 2,
+          "n_zero_observado": 10,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 0,
+          "n_zero_observado": 8,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 4,
+      "n_isolados_car": 4,
+      "n_arestas_car": 2,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3q6": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3q6",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 162,
+      "n_zero_observado": 244,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 78,
+        "DECRESCENTE": 84
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 2,
+          "n_zero_observado": 8,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 6,
+          "n_zero_observado": 4,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 11,
+          "n_zero_observado": 35,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 7,
+          "n_zero_observado": 47,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 14,
+          "n_zero_observado": 8,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 0,
+          "n_zero_observado": 26,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 18,
+          "n_zero_observado": 0,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 26,
+          "n_zero_observado": 6,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 13,
+          "n_zero_observado": 9,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 4,
+          "n_zero_observado": 30,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 5,
+          "n_zero_observado": 7,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 0,
+          "n_zero_observado": 24,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 0,
+          "n_zero_observado": 6,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 0,
+          "n_zero_observado": 10,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 12,
+          "n_zero_observado": 8,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 7,
+          "n_zero_observado": 9,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 9,
+          "n_zero_observado": 3,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 4,
+          "n_zero_observado": 4,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 84,
+      "n_isolados_car": 78,
+      "n_arestas_car": 59,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    },
+    "3t6": {
+      "dataset": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\02_dados\\vmd_SRE_SET-26_features_2026.xlsx",
+      "target": "3t6",
+      "modelo": "glmm_car",
+      "n_total": 3854,
+      "n_tr": 383,
+      "n_zero_observado": 23,
+      "n_pr": 3448,
+      "amostra_pequena": false,
+      "n_tr_por_sentido": {
+        "CRESCENTE": 191,
+        "DECRESCENTE": 192
+      },
+      "n_pr_por_sentido": {
+        "CRESCENTE": 1724,
+        "DECRESCENTE": 1724
+      },
+      "amostra_por_regiao": [
+        {
+          "regional_macro": "1",
+          "n_tr": 9,
+          "n_zero_observado": 1,
+          "n_pr": 172
+        },
+        {
+          "regional_macro": "10",
+          "n_tr": 8,
+          "n_zero_observado": 2,
+          "n_pr": 200
+        },
+        {
+          "regional_macro": "11",
+          "n_tr": 44,
+          "n_zero_observado": 2,
+          "n_pr": 322
+        },
+        {
+          "regional_macro": "12",
+          "n_tr": 44,
+          "n_zero_observado": 10,
+          "n_pr": 268
+        },
+        {
+          "regional_macro": "13",
+          "n_tr": 22,
+          "n_zero_observado": 0,
+          "n_pr": 202
+        },
+        {
+          "regional_macro": "14",
+          "n_tr": 24,
+          "n_zero_observado": 2,
+          "n_pr": 192
+        },
+        {
+          "regional_macro": "15",
+          "n_tr": 16,
+          "n_zero_observado": 0,
+          "n_pr": 54
+        },
+        {
+          "regional_macro": "16",
+          "n_tr": 18,
+          "n_zero_observado": 0,
+          "n_pr": 92
+        },
+        {
+          "regional_macro": "17",
+          "n_tr": 32,
+          "n_zero_observado": 0,
+          "n_pr": 160
+        },
+        {
+          "regional_macro": "18",
+          "n_tr": 20,
+          "n_zero_observado": 2,
+          "n_pr": 206
+        },
+        {
+          "regional_macro": "19",
+          "n_tr": 33,
+          "n_zero_observado": 1,
+          "n_pr": 178
+        },
+        {
+          "regional_macro": "2",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 150
+        },
+        {
+          "regional_macro": "20",
+          "n_tr": 24,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        },
+        {
+          "regional_macro": "3",
+          "n_tr": 6,
+          "n_zero_observado": 0,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "4",
+          "n_tr": 10,
+          "n_zero_observado": 0,
+          "n_pr": 132
+        },
+        {
+          "regional_macro": "5",
+          "n_tr": 19,
+          "n_zero_observado": 1,
+          "n_pr": 104
+        },
+        {
+          "regional_macro": "6",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 304
+        },
+        {
+          "regional_macro": "7",
+          "n_tr": 14,
+          "n_zero_observado": 2,
+          "n_pr": 142
+        },
+        {
+          "regional_macro": "8",
+          "n_tr": 12,
+          "n_zero_observado": 0,
+          "n_pr": 186
+        },
+        {
+          "regional_macro": "9",
+          "n_tr": 8,
+          "n_zero_observado": 0,
+          "n_pr": 140
+        }
+      ],
+      "n_car": 226,
+      "n_isolados_car": 157,
+      "n_arestas_car": 159,
+      "colunas_design_fixo": [
+        "log_media_empresas_ativas_z",
+        "log_distancia_cid_1_2_3_z",
+        "classe_Ligações",
+        "classe_Longitudinais",
+        "classe_Radiais",
+        "classe_Transversais",
+        "situacao_EOD",
+        "situacao_PAV",
+        "perim_urb_s"
+      ]
+    }
+  },
+  "diagnostico_predicoes": {
+    "Passeio": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2208,
+      "taxa_unique_preds": 0.6403712296983759,
+      "pred_min": 14.547552651441537,
+      "pred_mediana": 481.1850378833747,
+      "pred_max": 38346.40045814154
+    },
+    "Van": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2152,
+      "taxa_unique_preds": 0.6241299303944315,
+      "pred_min": 1.705534583076555,
+      "pred_mediana": 12.619352770427092,
+      "pred_max": 590.1620217545054
+    },
+    "Pickup": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2170,
+      "taxa_unique_preds": 0.6293503480278422,
+      "pred_min": 30.878824409342705,
+      "pred_mediana": 167.2408756476104,
+      "pred_max": 3207.48021559228
+    },
+    "Moto": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2208,
+      "taxa_unique_preds": 0.6403712296983759,
+      "pred_min": 3.0687796068965194,
+      "pred_mediana": 90.06156003179476,
+      "pred_max": 12691.65862830618
+    },
+    "2cb": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2208,
+      "taxa_unique_preds": 0.6403712296983759,
+      "pred_min": 0.45706639198082943,
+      "pred_mediana": 8.57110245905218,
+      "pred_max": 342.54361113377263
+    },
+    "3cb": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2092,
+      "taxa_unique_preds": 0.6067285382830626,
+      "pred_min": 0.5923344514466902,
+      "pred_mediana": 2.4779494368604715,
+      "pred_max": 64.3420534137738
+    },
+    "4cb": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1923,
+      "taxa_unique_preds": 0.5577146171693735,
+      "pred_min": 0.5342422277024218,
+      "pred_mediana": 2.4079278233629102,
+      "pred_max": 27.673699383282784
+    },
+    "2sb1": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1724,
+      "taxa_unique_preds": 0.5,
+      "pred_min": 0.0022561386595825877,
+      "pred_mediana": 0.05649334134884103,
+      "pred_max": 609.2117514243441
+    },
+    "2ib2": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1724,
+      "taxa_unique_preds": 0.5,
+      "pred_min": 0.9335461882113456,
+      "pred_mediana": 1.3325659920420572,
+      "pred_max": 2.945106383574902
+    },
+    "2c": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2208,
+      "taxa_unique_preds": 0.6403712296983759,
+      "pred_min": 3.4291989894159096,
+      "pred_mediana": 36.19038382190321,
+      "pred_max": 894.3372372411612
+    },
+    "3c": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2208,
+      "taxa_unique_preds": 0.6403712296983759,
+      "pred_min": 2.4209282269078622,
+      "pred_mediana": 28.748497011570578,
+      "pred_max": 451.986952676711
+    },
+    "4c": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1811,
+      "taxa_unique_preds": 0.5252320185614849,
+      "pred_min": 0.040497714643039064,
+      "pred_mediana": 1.6561241025552906,
+      "pred_max": 42.65610809544621
+    },
+    "4cd": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2235,
+      "taxa_unique_preds": 0.6482018561484919,
+      "pred_min": 0.7179440068420772,
+      "pred_mediana": 5.319424268719132,
+      "pred_max": 124.60813871720336
+    },
+    "2s1": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1874,
+      "taxa_unique_preds": 0.5435034802784223,
+      "pred_min": 0.3591861561471055,
+      "pred_mediana": 1.8486608385403858,
+      "pred_max": 37.8785259095172
+    },
+    "2s2": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2219,
+      "taxa_unique_preds": 0.6435614849187935,
+      "pred_min": 0.6545582172606558,
+      "pred_mediana": 2.762786901569779,
+      "pred_max": 34.410232312848464
+    },
+    "3s1": {
+      "ajuste_ignorado": "sem contagens positivas; estimativa fixada em 0",
+      "n_observado": 406
+    },
+    "2s3": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2223,
+      "taxa_unique_preds": 0.6447215777262181,
+      "pred_min": 0.4170021878058247,
+      "pred_mediana": 2.7042256434972005,
+      "pred_max": 79.70813292935054
+    },
+    "3s2": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2180,
+      "taxa_unique_preds": 0.6322505800464037,
+      "pred_min": 0.5553879754410286,
+      "pred_mediana": 2.313258315338345,
+      "pred_max": 19.59187159852525
+    },
+    "2i2": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1888,
+      "taxa_unique_preds": 0.5475638051044084,
+      "pred_min": 0.2954493472506426,
+      "pred_mediana": 1.0928776149630854,
+      "pred_max": 6.848867692908917
+    },
+    "2i3": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1948,
+      "taxa_unique_preds": 0.5649651972157773,
+      "pred_min": 0.16398087167014352,
+      "pred_mediana": 1.1318358760906202,
+      "pred_max": 9.96080534279318
+    },
+    "2j3": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1905,
+      "taxa_unique_preds": 0.5524941995359629,
+      "pred_min": 0.46163482189642363,
+      "pred_mediana": 1.417642015981113,
+      "pred_max": 7.32834724070288
+    },
+    "3i2": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1881,
+      "taxa_unique_preds": 0.5455336426914154,
+      "pred_min": 0.5615979172341048,
+      "pred_mediana": 1.4655418990196363,
+      "pred_max": 8.88516158557426
+    },
+    "3s3": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2213,
+      "taxa_unique_preds": 0.6418213457076566,
+      "pred_min": 1.711328242044102,
+      "pred_mediana": 18.96053311498611,
+      "pred_max": 283.0056976634074
+    },
+    "3i3": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2165,
+      "taxa_unique_preds": 0.6279002320185615,
+      "pred_min": 0.2928467293289235,
+      "pred_mediana": 2.9744631379219184,
+      "pred_max": 33.45299949931368
+    },
+    "3j3": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2108,
+      "taxa_unique_preds": 0.611368909512761,
+      "pred_min": 0.3320133111272552,
+      "pred_mediana": 1.764152315077506,
+      "pred_max": 29.19207934962852
+    },
+    "4r4": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1876,
+      "taxa_unique_preds": 0.5440835266821346,
+      "pred_min": 0.3717325586615061,
+      "pred_mediana": 2.1257950098491674,
+      "pred_max": 16.46522744701439
+    },
+    "2c2": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1987,
+      "taxa_unique_preds": 0.576276102088167,
+      "pred_min": 0.5277131941354066,
+      "pred_mediana": 1.5013103638608607,
+      "pred_max": 22.47409130949327
+    },
+    "2c3": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1764,
+      "taxa_unique_preds": 0.511600928074246,
+      "pred_min": 0.04705656849464784,
+      "pred_mediana": 0.5519959017259948,
+      "pred_max": 5.340076631137002
+    },
+    "3c2": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2139,
+      "taxa_unique_preds": 0.6203596287703016,
+      "pred_min": 0.6084405691438938,
+      "pred_mediana": 1.4316672887398099,
+      "pred_max": 5.6009802614127935
+    },
+    "3c3": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2075,
+      "taxa_unique_preds": 0.6017981438515081,
+      "pred_min": 0.6598932619212365,
+      "pred_mediana": 1.4715439065810887,
+      "pred_max": 10.27629075612544
+    },
+    "3d3": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1746,
+      "taxa_unique_preds": 0.5063805104408353,
+      "pred_min": 0.04577088196653651,
+      "pred_mediana": 1.9579963573589567,
+      "pred_max": 27.365383801365407
+    },
+    "3d4": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2211,
+      "taxa_unique_preds": 0.6412412993039444,
+      "pred_min": 0.42521497568114713,
+      "pred_mediana": 12.551216935657768,
+      "pred_max": 246.09955462879486
+    },
+    "3q4": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1777,
+      "taxa_unique_preds": 0.5153712296983759,
+      "pred_min": 0.3912808254879074,
+      "pred_mediana": 2.097223106585517,
+      "pred_max": 18.74662497377369
+    },
+    "3q6": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 1957,
+      "taxa_unique_preds": 0.5675754060324826,
+      "pred_min": 0.5257976330893691,
+      "pred_mediana": 4.350970830393209,
+      "pred_max": 84.33812913561965
+    },
+    "3t6": {
+      "n_pr": 3448,
+      "n_pr_sem_valor": 0,
+      "unique_preds": 2209,
+      "taxa_unique_preds": 0.640661252900232,
+      "pred_min": 0.8525617551847353,
+      "pred_mediana": 17.723832374953393,
+      "pred_max": 251.77344994502187
+    }
+  },
+  "tempo_por_target_s": {
+    "Passeio": 97.73,
+    "Van": 51.39,
+    "Pickup": 72.82,
+    "Moto": 91.16,
+    "2cb": 46.67,
+    "3cb": 34.28,
+    "4cb": 13.2,
+    "2sb1": 11.15,
+    "2ib2": 19.11,
+    "2c": 57.72,
+    "3c": 56.35,
+    "4c": 17.68,
+    "4cd": 90.24,
+    "2s1": 13.55,
+    "2s2": 28.5,
+    "3s1": 0.0,
+    "2s3": 35.64,
+    "3s2": 72.62,
+    "2i2": 18.2,
+    "2i3": 18.76,
+    "2j3": 15.73,
+    "3i2": 15.03,
+    "3s3": 56.75,
+    "3i3": 62.76,
+    "3j3": 18.12,
+    "4r4": 15.63,
+    "2c2": 17.63,
+    "2c3": 15.04,
+    "3c2": 32.92,
+    "3c3": 19.23,
+    "3d3": 15.0,
+    "3d4": 40.4,
+    "3q4": 15.41,
+    "3q6": 20.16,
+    "3t6": 37.64
+  },
+  "arquivo_operacional": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\08_entrega-glmm-car-vmd\\outputs\\modelo_volume_glmm_car_20261118_195410.xlsx",
+  "arquivo_tecnico": "C:\\Users\\dynatest\\OneDrive - Dynatest Engenharia\\Área de Trabalho\\SGP\\vdm-regressao-previsto\\08_entrega-glmm-car-vmd\\outputs\\glmm_car_multitarget_resultados_20261118_195410.xlsx"
+}
